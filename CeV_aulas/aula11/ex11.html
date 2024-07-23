@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visto</title>
+</head>
+<body>
+    <h1>Sistema de vistos</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="confirmar" onclick="analizarVisto()">
+    <p id="vivendoEm" nome="vivendoEm"></p>
+    <div id="resultado"></div>
+
+
+    <script>
+        
+
+        function analizarVisto(){
+            var pais = window.document.querySelector("input#pais")
+            var resultado = window.document.querySelector("div#resultado")
+            var vivendoEm = window.document.querySelector("p#vivendoEm")
+            vivendoEm.innerHTML = `Vivendo em ${pais.value}...`
+            if(pais.value != "Brasil"){
+                resultado.innerHTML = "<p>Você é estrangeiro"
+            }else{
+                resultado.innerHTML = "<p>Você é brasileiro"
+            }
+        }
+    </script>
+</body>
+</html>
