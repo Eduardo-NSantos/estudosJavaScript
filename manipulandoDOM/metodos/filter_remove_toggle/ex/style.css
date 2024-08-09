@@ -37,6 +37,7 @@ button{
 .c1{
     background-color: #ccc;
     color: #444;
+    cursor: pointer;
 }
 .c2{
     background-color: #444;
@@ -53,6 +54,7 @@ button{
     margin: 5px;
     height: 500px;
     width: 300px;
+    overflow-y: scroll;
 }
 .btn_lixeira{
     width: 25px;
